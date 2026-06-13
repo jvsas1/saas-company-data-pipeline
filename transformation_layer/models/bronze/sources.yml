@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: staging_layer_db
+    database: saaspipeline  # Optional: defaults to target database
+    schema: raw_data        # Optional: defaults to source name
+    description: "Raw Extracted Data from  company"
+    tables:
+      - name: ravenstack_accounts
+        description: "All accounts table"
+      - name: ravenstack_churn_events
+        description: "Churn events"
+      - name: ravenstack_feature_usage
+        description: "Usage information"
+      - name: ravenstack_subscriptions
+        description: "Subscritions info"
+      - name: ravenstack_support_tickets
+        description: "Tickets info"
